@@ -1,0 +1,33 @@
+#vision {
+  background-color: $black;
+  color: $white;
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: $f-xlarge;
+    font-family: Lobster;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .content {
+    p {
+      font-size: $f-large;
+      padding-bottom: $f-xlarge;
+
+      .emphasis {
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .highlight {
+        color: $primary;
+      }
+    }
+  }
+}
