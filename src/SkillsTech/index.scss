@@ -1,0 +1,74 @@
+#SkillsAndTech {
+  height: 100vh;
+  padding-top: 2rem;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: $f-xlarge;
+    font-family: Lobster;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .skills {
+    .skill {
+      font-size: $f-normal;
+      padding-bottom: $f-normal;
+
+      div {
+        padding-bottom: 0.5rem;
+      }
+
+      svg {
+        width: 100%;
+      }
+
+      .barContainer {
+        width: calc(100% - 2px);
+      }
+
+      .barBg {
+        width: calc(100% - 10px);
+      }
+    }
+
+    padding-bottom: $f-large;
+  }
+
+  .techs {
+    > div {
+      display: flex;
+      width: 100vw;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding-left: 1.25rem;
+      padding-right: 0.5rem;
+    }
+    .tech {
+      border: 0.125rem solid $gray;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem;
+
+      img {
+        width: 4rem;
+        max-height: 4rem;
+      }
+    }
+    .tech:nth-child(1) .tech:last-child {
+      margin-left: 1rem;
+    }
+  }
+
+  .techs ::-webkit-scrollbar {
+    display: none;
+  }
+}
