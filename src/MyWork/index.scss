@@ -1,0 +1,30 @@
+#my-work {
+  padding-top: 2rem;
+  background-color: $black-shade1;
+  color: $white;
+  height: 100vh;
+
+  h1 {
+    font-size: $f-xlarge;
+    font-family: Lobster;
+    margin-bottom: 2rem;
+  }
+
+  .showcase {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    > div {
+      width: 8.5rem;
+      height: 8.5rem;
+      border-radius: 100%;
+      margin-bottom: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
