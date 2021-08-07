@@ -31,3 +31,9 @@
     }
   }
 }
+
+.clipedBG {
+  padding: 1rem 0;
+  background-color: $black;
+  clip-path: polygon(0 0, 100% 0px, 100% 0%, 0% 100%);
+}
