@@ -16,6 +16,12 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Medium.ttf);
+  font-weight: 500;
+}
+
 #root {
   font-family: Inter;
 }
