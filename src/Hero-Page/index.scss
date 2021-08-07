@@ -1,0 +1,54 @@
+@import "../config";
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    height: 2.75rem;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      font-size: 0.75rem;
+      color: $gray;
+    }
+  }
+
+  button {
+    font-size: $f-large;
+    font-weight: 500;
+    color: $white;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    background-color: $primary;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .nextSection {
+    padding: 1.25rem;
+    cursor: pointer;
+  }
+
+  .content {
+    h1 {
+      font-size: $f-xlarge;
+      font-weight: bold;
+      text-align: center;
+      line-height: 2;
+    }
+    h2 {
+      font-size: $f-large;
+      text-align: center;
+    }
+    .name {
+      color: $primary;
+    }
+  }
+}

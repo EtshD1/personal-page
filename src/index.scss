@@ -43,3 +43,9 @@ table {
 * {
   box-sizing: border-box;
 }
+
+.container {
+	padding: 0 1.25rem;
+}
+
+@import './Hero-Page/';

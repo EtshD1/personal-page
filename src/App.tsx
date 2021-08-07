@@ -2,9 +2,9 @@ import Hero from './Hero-Page';
 import './index.scss';
 
 export const App = () => {
-  return (<>
+  return (<main id="App">
     <Hero />
-  </>);
+  </main>);
 }
 
 export default App;
