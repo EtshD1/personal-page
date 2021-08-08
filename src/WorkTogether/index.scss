@@ -1,0 +1,31 @@
+#work-together {
+  padding-top: 2rem;
+  height: 100vh;
+  background-color: $primary;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    font-size: $f-xlarge;
+    font-family: Lobster;
+    padding-bottom: 2.75rem;
+  }
+
+  h3 {
+    font-size: $f-normal;
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: $black;
+    padding-top: 1rem;
+    padding-bottom: 1.75rem;
+    font-size: $f-normal;
+  }
+
+  .contacts {
+    padding-top: 2.75rem;
+  }
+}
