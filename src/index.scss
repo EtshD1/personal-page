@@ -55,6 +55,11 @@ table {
 	cursor: pointer;
 }
 
+#root {
+	width: 100%;
+	overflow-x: hidden
+}
+
 @import './Hero-Page/';
 @import './Vision/';
 @import './SkillsTech/';

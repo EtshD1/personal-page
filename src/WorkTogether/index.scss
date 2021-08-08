@@ -23,9 +23,47 @@
     padding-top: 1rem;
     padding-bottom: 1.75rem;
     font-size: $f-normal;
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      a {
+        margin-top: 0.625rem;
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+        cursor: pointer;
+
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
   }
 
   .contacts {
     padding-top: 2.75rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div {
+      background-color: $white;
+      padding: 0.25rem 1rem;
+      margin-top: 1.75rem;
+      height: 2.5rem;
+      width: 8.125rem;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 6rem;
+      }
+    }
   }
 }
