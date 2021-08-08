@@ -1,6 +1,6 @@
 import './index.scss';
 
-import Hero from './Hero-Page';
+import Hero from './HeroPage';
 import Vision from './Vision';
 import SkillsTech from './SkillsTech';
 import MyWork from './MyWork';
