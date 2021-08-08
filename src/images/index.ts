@@ -1,4 +1,5 @@
 import Angular from './Angular.svg';
+import Certificate from './Certificate.svg';
 import Figma from './Figma.svg';
 import NodeJS from './NodeJs.png';
 import Python from './Python.svg';
@@ -11,6 +12,7 @@ import Site3 from './Site3.png';
 
 const images = {
   Angular: Angular,
+  Certificate: Certificate,
   Figma: Figma,
   NodeJS: NodeJS,
   Python: Python,

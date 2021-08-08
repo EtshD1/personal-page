@@ -3,11 +3,21 @@
   background-color: $black-shade1;
   color: $white;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .nextSection {
+    align-self: flex-end;
+  }
 
   h1 {
+    width: 100%;
+    flex-shrink: 2;
     font-size: $f-xlarge;
     font-family: Lobster;
-    margin-bottom: 2rem;
+    height: $f-xlarge + 2rem;
   }
 
   .showcase {
@@ -24,6 +34,54 @@
 
       img {
         width: 100%;
+      }
+    }
+
+    .github-link {
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: $black;
+      cursor: pointer;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $f-normal;
+
+        svg {
+          margin-top: 0.1rem;
+          margin-right: 0.25rem;
+        }
+
+        span {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .certificateLink {
+    width: 100%;
+    display: flex;
+
+    button {
+      font-size: $f-normal;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      border: 0;
+      color: $white;
+      padding-bottom: 0.125rem;
+      border-bottom: 0.125rem solid $white;
+      cursor: pointer;
+
+      img {
+        padding-left: 0.25rem;
       }
     }
   }
