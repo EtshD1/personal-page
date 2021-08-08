@@ -1,5 +1,11 @@
 import Angular from './Angular.svg';
 import Certificate from './Certificate.svg';
+import AdvancedWebDevelopment from './Certificates/AdvancedWebDevelopment.png';
+import FrontendLibraries from './Certificates/FrontendLibraries.png';
+import GitSourceControl from './Certificates/Git-SourceControl.png';
+import IntroToCloudComputing from './Certificates/Intro-to-CloudComputing.png';
+import ProfessionalWebDevelopment from './Certificates/ProfessionalWebDevelopment.png';
+import ResponsiveWebDesign from './Certificates/ResponsiveWebDesign.png';
 import Email from './Email.svg';
 import Figma from './Figma.svg';
 import Fiverr from './Fiverr.svg';
@@ -16,6 +22,14 @@ import Upwork from './Upwork.svg';
 const images = {
   Angular: Angular,
   Certificate: Certificate,
+  Certificates: {
+    AdvancedWebDevelopment,
+    FrontendLibraries,
+    GitSourceControl,
+    IntroToCloudComputing,
+    ProfessionalWebDevelopment,
+    ResponsiveWebDesign
+  },
   Email: Email,
   Figma: Figma,
   Fiverr: Fiverr,
