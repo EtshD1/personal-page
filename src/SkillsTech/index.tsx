@@ -2,7 +2,7 @@ import Skills from "./Skills"
 import Techs from "./Techs";
 
 const SkillsTech = () => {
-  return (<div id="SkillsAndTech">
+  return (<div id="skills-tech">
     <div>
       <Skills />
       <Techs />

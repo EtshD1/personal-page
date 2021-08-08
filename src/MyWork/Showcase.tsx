@@ -5,7 +5,7 @@ const Showcase = () => {
     <div><img src={images.Site.Site1} alt="" /></div>
     <div><img src={images.Site.Site2} alt="" /></div>
     <div><img src={images.Site.Site3} alt="" /></div>
-    <div className="github-link">
+    <a className="github-link" href="https://github.com/EtshD1">
       <div>View more</div>
       <div>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@ const Showcase = () => {
         </svg>
         <span>GitHub</span>
       </div>
-    </div>
+    </a>
   </div>);
 }
 

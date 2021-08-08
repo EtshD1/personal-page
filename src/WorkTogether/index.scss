@@ -25,19 +25,23 @@
     font-size: $f-normal;
 
     .links {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-      a {
+      .link {
         margin-top: 0.625rem;
-        display: flex;
-        align-items: center;
-        flex-basis: 50%;
-        cursor: pointer;
 
-        svg {
-          margin-right: 0.5rem;
+        a {
+          align-items: center;
+          cursor: pointer;
+          color: $white;
+          text-decoration: none;
+          padding-bottom: 0.125rem;
+          display: flex;
+
+          svg {
+            margin-right: 0.5rem;
+          }
         }
       }
     }
