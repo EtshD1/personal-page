@@ -60,6 +60,7 @@ html {
 
 #App {
 	overflow-y: auto;
+	overflow-x: hidden;
 	height: 100vh;
 }
 #App.withModal {
@@ -68,7 +69,13 @@ html {
 
 #root {
 	width: 100%;
-	overflow-x: hidden
+}
+
+@media (min-width: 700px) {
+	.container {
+			max-width: 44rem;
+			margin: 0 auto;
+	}
 }
 
 @import './HeroPage/';

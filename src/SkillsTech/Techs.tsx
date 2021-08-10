@@ -3,7 +3,7 @@ import images from '../images'
 const Techs = () => {
   return (<div className="techs">
     <h1 className="container">Technologies</h1>
-    <div>
+    <div className="container">
       <div className="tech">
         <img src={images.Angular} alt="" />
       </div>

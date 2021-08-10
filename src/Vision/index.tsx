@@ -1,6 +1,6 @@
 const Vision = () => {
-  return (<>
-    <div id="vision" className="container">
+  return (<div id="vision">
+    <div className="container">
       <h1>Vision</h1>
       <div className="content">
         <p>In our age, data travels fast. Having <span className="emphasis">the right online presence can promote your business fast enough since everyone is online</span>.</p>
@@ -16,7 +16,7 @@ const Vision = () => {
     <div className="clipedBG">
       <div></div>
     </div>
-  </>);
+  </div>);
 }
 
 export default Vision;

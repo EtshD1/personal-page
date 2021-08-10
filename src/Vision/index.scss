@@ -1,18 +1,21 @@
 #vision {
   background-color: $black;
   color: $white;
-  padding-top: 2rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
   h1 {
     font-size: $f-xlarge;
     font-family: Lobster;
     width: 100%;
     padding-bottom: 2rem;
+  }
+
+  .container {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
   }
 
   .content {

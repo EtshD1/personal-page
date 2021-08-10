@@ -7,6 +7,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .container {
+    width: 100%;
+  }
+
   h1 {
     font-size: $f-xlarge;
     font-family: Lobster;
