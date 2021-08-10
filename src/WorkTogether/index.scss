@@ -75,3 +75,11 @@
     }
   }
 }
+
+@media (min-width: 700px) {
+  #work-together {
+    .contacts {
+      justify-content: space-around;
+    }
+  }
+}
