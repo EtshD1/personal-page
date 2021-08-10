@@ -224,30 +224,37 @@
       justify-content: flex-end;
     }
 
-    .showcase .github-link {
-      width: 100%;
-      height: auto;
-      flex-direction: row;
-      background: none;
-      justify-content: flex-start;
-      color: $white;
+    .showcase {
+      .github-link {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        background: none;
+        justify-content: flex-start;
+        color: $white;
 
-      div {
-        border-bottom: 1px solid #00000000;
+        div {
+          border-bottom: 1px solid #00000000;
+        }
+
+        div:last-child {
+          border-color: $white;
+
+          margin-left: 0.5rem;
+
+          span {
+            color: $white;
+          }
+
+          svg path {
+            fill: $white;
+          }
+        }
       }
 
-      div:last-child {
-        border-color: $white;
-
-        margin-left: 0.5rem;
-
-        span {
-          color: $white;
-        }
-
-        svg path {
-          fill: $white;
-        }
+      > div {
+        width: 12rem;
+        height: 12rem;
       }
     }
   }
