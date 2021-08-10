@@ -1,5 +1,4 @@
 #vision {
-  background-color: $black;
   color: $white;
 
   h1 {
@@ -10,6 +9,7 @@
   }
 
   .container {
+    background-color: $black;
     display: flex;
     padding-top: 2rem;
     flex-direction: column;
