@@ -1,6 +1,8 @@
+import { goto } from "../scrollTo";
+
 const KnowMore = () => {
   return (<div>
-    <button>Know More</button>
+    <button onClick={() => goto('vision')}>Know More</button>
   </div>);
 }
 
