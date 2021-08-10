@@ -1,11 +1,11 @@
-import { MouseEventHandler } from 'react';
+import { useState } from 'react';
 import images from '../images';
 
 const Item = ({ title, image, link }: { title: string, image: string, link: string }) => {
   return (<div className="certificate">
     <h3>{title}</h3>
     <div>
-      <img src={image} alt="" />
+      <a href={link} target="_blank" rel="noreferrer"><img src={image} alt="" /></a>
     </div>
     <div className="link">
       View Certificate: <a href={link} target="_blank" rel="noreferrer">{link}</a>
@@ -13,10 +13,19 @@ const Item = ({ title, image, link }: { title: string, image: string, link: stri
   </div>);
 }
 
-const Certificates = ({ isOpen, close }: { isOpen: boolean, close: MouseEventHandler<HTMLDivElement> }) => {
-  if (isOpen) {
-    return (<div id="modal" onClick={close}>
-      <div className="certificates">
+const Certificates = ({ close }: { close: Function }) => {
+  const [active, setActive] = useState(true);
+
+  const exit = () => {
+    setActive(false);
+    setTimeout(() => {
+      close();
+    }, 500);
+  }
+
+  return (<div id="modal" className={active ? '' : 'hide'} onClick={exit}>
+    <div className="container">
+      <div className="certificates" onClick={(e) => e.stopPropagation()}>
         <Item title='Advanced Web Development' image={images.Certificates.AdvancedWebDevelopment} link="https://confirm.udacity.com/VHLJSKZE" />
 
         <Item title='Front End Libraries' image={images.Certificates.FrontendLibraries} link="https://www.freecodecamp.org/certification/etsh/front-end-libraries" />
@@ -28,11 +37,15 @@ const Certificates = ({ isOpen, close }: { isOpen: boolean, close: MouseEventHan
         <Item title='Web Development Professional' image={images.Certificates.ProfessionalWebDevelopment} link="https://confirm.udacity.com/ENSZLSKK" />
 
         <Item title='Responsive Web Design' image={images.Certificates.ResponsiveWebDesign} link="https://www.freecodecamp.org/certification/etsh/responsive-web-design" />
-
       </div>
-    </div>);
-  }
-  return null;
+    </div>
+    <div className="bar">
+      <div className="exit-btn" onClick={exit}>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>);
 }
 
 export default Certificates;
