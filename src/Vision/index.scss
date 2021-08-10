@@ -8,14 +8,16 @@
     padding-bottom: 2rem;
   }
 
-  .container {
+  > div {
     background-color: $black;
-    display: flex;
-    padding-top: 2rem;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
+    .container {
+      display: flex;
+      padding-top: 2rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+    }
   }
 
   .content {
