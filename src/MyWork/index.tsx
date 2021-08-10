@@ -4,13 +4,19 @@ import Certificates from "./Certificates";
 import { useState } from "react";
 
 const MyWork = () => {
-  const [certsIsOpen, setIsOpen] = useState(true);
+  const [certsIsOpen, setIsOpen] = useState(false);
+
+  const openCerts = () => {
+    if (!certsIsOpen) {
+      setIsOpen(true);
+    }
+  }
 
   return (<div id="my-work" className="container">
     <h1>My Work</h1>
     <Showcase />
     <div className="certificateLink">
-      <button>View my Certificates <img src={images.Certificate} alt="" /></button>
+      <button onClick={openCerts}>View my Certificates <img src={images.Certificate} alt="" /></button>
     </div>
     <Certificates isOpen={certsIsOpen} close={() => setIsOpen(false)} />
     <div className="nextSection">
