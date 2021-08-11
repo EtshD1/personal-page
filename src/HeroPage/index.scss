@@ -1,49 +1,77 @@
 #hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 
-  header {
-    height: 2.75rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
+	header {
+		height: 2.75rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
 
-    .logo {
-      font-size: 0.75rem;
-      color: $gray;
-    }
-  }
+		.logo {
+			font-size: $f-small;
+			color: $gray;
+		}
+	}
 
-  button {
-    font-size: $f-large;
-    font-weight: 500;
-    color: $white;
-    padding: 0.5rem 1rem;
-    border-radius: 0;
-    background-color: $primary;
-    border: 0;
-    cursor: pointer;
-  }
+	button {
+		font-size: $f-large;
+		font-weight: 500;
+		color: $white;
+		padding: 0.5rem 1rem;
+		border-radius: 0;
+		background-color: $primary;
+		border: 0;
+		cursor: pointer;
+	}
 
-  .content {
-    color: $black;
+	.content {
+		color: $black;
 
-    h1 {
-      font-size: $f-xlarge;
-      font-weight: bold;
-      text-align: center;
-      line-height: 2;
-    }
-    h2 {
-      font-size: $f-large;
-      text-align: center;
-    }
-    .name {
-      color: $primary;
-    }
-  }
+		h1 {
+			font-size: $f-xlarge;
+			font-weight: bold;
+			text-align: center;
+			line-height: 2;
+		}
+		h2 {
+			font-size: $f-large;
+			text-align: center;
+		}
+		.name {
+			color: $primary;
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	$f-small: 1.25rem;
+	$f-normal: 1.5rem;
+	$f-large: 2rem;
+	$f-xlarge: 3rem;
+
+	#hero {
+		button {
+			font-size: $f-large;
+		}
+
+		header {
+			.logo {
+				font-size: $f-small;
+			}
+		}
+
+		.content {
+			h1 {
+				font-size: $f-xlarge;
+			}
+			h2 {
+				font-size: $f-large;
+			}
+		}
+	}
 }

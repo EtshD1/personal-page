@@ -1,79 +1,96 @@
 #skills-tech {
-  min-height: 100vh;
-  padding-top: 2rem;
-  color: $black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	min-height: 100vh;
+	padding-top: 2rem;
+	color: $black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 
-  h1 {
-    font-size: $f-xlarge;
-    font-family: Lobster;
-    width: 100%;
-    padding-bottom: 2rem;
-  }
+	h1 {
+		font-size: $f-xlarge;
+		font-family: Lobster;
+		width: 100%;
+		padding-bottom: 2rem;
+	}
 
-  .skills {
-    .skill {
-      font-size: $f-normal;
-      padding-bottom: $f-normal;
+	.skills {
+		.skill {
+			font-size: $f-normal;
+			padding-bottom: $f-normal;
 
-      div {
-        padding-bottom: 0.5rem;
-      }
+			div {
+				padding-bottom: 0.5rem;
+			}
 
-      svg {
-        width: 100%;
-      }
+			svg {
+				width: 100%;
+			}
 
-      .barContainer {
-        width: calc(100% - 2px);
-      }
+			.barContainer {
+				width: calc(100% - 2px);
+			}
 
-      .barBg {
-        width: calc(100% - 10px);
-      }
-    }
+			.barBg {
+				width: calc(100% - 10px);
+			}
+		}
 
-    padding-bottom: $f-large;
-  }
+		padding-bottom: $f-large;
+	}
 
-  .techs {
-    > div {
-      display: flex;
-      width: 100vw;
-      overflow-x: scroll;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .tech {
-      border: 0.125rem solid $gray;
-      padding: 0.5rem;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 1rem;
+	.techs {
+		> div {
+			display: flex;
+			width: 100vw;
+			overflow-x: scroll;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+		.tech {
+			border: 0.125rem solid $gray;
+			padding: 0.5rem;
+			margin-right: 0.5rem;
+			margin-bottom: 0.5rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 1rem;
 
-      img {
-        width: 4rem;
-        max-height: 4rem;
-      }
-    }
-    .tech:nth-child(1) .tech:last-child {
-      margin-left: 1rem;
-    }
-  }
+			img {
+				width: 4rem;
+				max-height: 4rem;
+			}
+		}
+		.tech:nth-child(1) .tech:last-child {
+			margin-left: 1rem;
+		}
+	}
 
-  .techs ::-webkit-scrollbar {
-    display: none;
-  }
+	.techs ::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media (min-width: 700px) {
-  #skills-tech .techs > div {
-    flex-wrap: wrap;
-  }
+	$f-small: 1.25rem;
+	$f-normal: 1.5rem;
+	$f-large: 2rem;
+	$f-xlarge: 3rem;
+
+	#skills-tech {
+		h1 {
+			font-size: $f-xlarge;
+		}
+
+		.skills {
+			.skill {
+				font-size: $f-normal;
+			}
+		}
+
+		.techs > div {
+			flex-wrap: wrap;
+		}
+	}
 }

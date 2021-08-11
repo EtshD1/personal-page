@@ -1,126 +1,161 @@
 #work-together {
-  padding-top: 2rem;
-  height: 100vh;
-  background-color: $primary;
-  color: $white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	padding-top: 2rem;
+	height: 100vh;
+	background-color: $primary;
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-  .container {
-    width: 100%;
-  }
+	.container {
+		width: 100%;
+	}
 
-  h1 {
-    font-size: $f-xlarge;
-    font-family: Lobster;
-    padding-bottom: 2.75rem;
-  }
+	h1 {
+		font-size: $f-xlarge;
+		font-family: Lobster;
+		padding-bottom: 2.75rem;
+	}
 
-  h3 {
-    font-size: $f-normal;
-    font-weight: bold;
-  }
+	h3 {
+		font-size: $f-normal;
+		font-weight: bold;
+	}
 
-  footer {
-    background-color: $black;
-    padding-top: 1rem;
-    padding-bottom: 1.75rem;
-    font-size: $f-normal;
+	footer {
+		background-color: $black;
+		padding-top: 1rem;
+		padding-bottom: 1.75rem;
+		font-size: $f-normal;
 
-    .links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+		.links {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 
-      .link {
-        margin-top: 0.625rem;
+			.link {
+				margin-top: 0.625rem;
 
-        a {
-          align-items: center;
-          cursor: pointer;
-          color: $white;
-          text-decoration: none;
-          padding-bottom: 0.125rem;
-          display: flex;
+				a {
+					align-items: center;
+					cursor: pointer;
+					color: $white;
+					text-decoration: none;
+					padding-bottom: 0.125rem;
+					display: flex;
 
-          svg {
-            margin-right: 0.5rem;
-          }
-        }
-      }
-    }
-  }
+					svg {
+						margin-right: 0.5rem;
+					}
+				}
+			}
+		}
+	}
 
-  .contacts {
-    padding-top: 2.75rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	.contacts {
+		padding-top: 2.75rem;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 
-    .banner {
-      position: fixed;
-      top: 0;
-      background-color: $white;
-      border: 1px solid $white;
-      border-radius: 0.25rem;
-      animation: showBanner 1s ease forwards, hideBanner 1s ease 6s forwards;
-      font-size: $f-normal;
-      color: $black;
-      height: auto;
-      width: auto;
-      font-weight: 500;
-      cursor: unset;
-      padding: 0.5rem 1rem;
+		.banner {
+			position: fixed;
+			top: 0;
+			background-color: $white;
+			border: 1px solid $white;
+			border-radius: 0.25rem;
+			animation: showBanner 1s ease forwards, hideBanner 1s ease 6s forwards;
+			font-size: $f-normal;
+			color: $black;
+			height: auto;
+			width: auto;
+			font-weight: 500;
+			cursor: unset;
+			padding: 0.5rem 1rem;
 
-      a {
-        padding-left: 0.5rem;
-        color: $black;
-      }
-    }
+			a {
+				padding-left: 0.5rem;
+				color: $black;
+			}
+		}
 
-    div {
-      background-color: $white;
-      padding: 0.25rem 1rem;
-      margin-top: 1.75rem;
-      height: 2.5rem;
-      width: 8.125rem;
-      border-radius: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
+		div {
+			background-color: $white;
+			padding: 0.25rem 1rem;
+			margin-top: 1.75rem;
+			height: 2.5rem;
+			border-radius: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
 
-      img {
-        width: 6rem;
-      }
-    }
-  }
+			img {
+				width: 6rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 700px) {
-  #work-together {
-    .contacts {
-      justify-content: space-around;
-    }
-  }
+	#work-together {
+		.contacts {
+			justify-content: space-around;
+		}
+	}
 }
 
 @keyframes showBanner {
-  0% {
-    top: -5rem;
-  }
+	0% {
+		top: -5rem;
+	}
 
-  100% {
-    top: 1rem;
-  }
+	100% {
+		top: 1rem;
+	}
 }
 
 @keyframes hideBanner {
-  0% {
-    top: 1rem;
-  }
+	0% {
+		top: 1rem;
+	}
 
-  100% {
-    top: -5rem;
-  }
+	100% {
+		top: -5rem;
+	}
+}
+
+@media (min-width: 700px) {
+	$f-small: 1.25rem;
+	$f-normal: 1.5rem;
+	$f-large: 2rem;
+	$f-xlarge: 3rem;
+
+	#work-together {
+		h1 {
+			font-size: $f-xlarge;
+		}
+
+		h3 {
+			font-size: $f-normal;
+		}
+
+		footer {
+			font-size: $f-normal;
+		}
+
+		.contacts {
+			.banner {
+				font-size: $f-normal;
+			}
+
+			div {
+				padding: 0.5rem 1.5rem;
+				height: auto;
+
+				img {
+					width: 8rem;
+				}
+			}
+		}
+	}
 }

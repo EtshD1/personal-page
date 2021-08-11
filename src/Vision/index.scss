@@ -1,44 +1,63 @@
 #vision {
-  color: $white;
+	color: $white;
 
-  h1 {
-    font-size: $f-xlarge;
-    font-family: Lobster;
-    width: 100%;
-    padding-bottom: 2rem;
-  }
+	h1 {
+		font-size: $f-xlarge;
+		font-family: Lobster;
+		width: 100%;
+		padding-bottom: 2rem;
+	}
 
-  > div {
-    background-color: $black;
-    .container {
-      display: flex;
-      padding-top: 2rem;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 100vh;
-    }
-  }
+	> div {
+		background-color: $black;
+		.container {
+			display: flex;
+			padding-top: 2rem;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			min-height: 100vh;
+		}
+	}
 
-  .content {
-    p {
-      font-size: $f-large;
-      padding-bottom: $f-xlarge;
+	.content {
+		p {
+			font-size: $f-large;
+			padding-bottom: $f-xlarge;
 
-      .emphasis {
-        font-weight: 300;
-        font-style: italic;
-      }
+			.emphasis {
+				font-weight: 300;
+				font-style: italic;
+			}
 
-      .highlight {
-        color: $primary;
-      }
-    }
-  }
+			.highlight {
+				color: $primary;
+			}
+		}
+	}
 }
 
 .clipedBG {
-  padding: 1rem 0;
-  background-color: $black;
-  clip-path: polygon(0 0, 100% 0px, 100% 0%, 0% 100%);
+	padding: 1rem 0;
+	background-color: $black;
+	clip-path: polygon(0 0, 100% 0px, 100% 0%, 0% 100%);
+}
+
+@media (min-width: 700px) {
+	$f-small: 1.25rem;
+	$f-normal: 1.5rem;
+	$f-large: 2rem;
+	$f-xlarge: 3rem;
+
+	#vision {
+		h1 {
+			font-size: $f-xlarge;
+		}
+
+		.content {
+			p {
+				font-size: $f-large;
+			}
+		}
+	}
 }
