@@ -57,6 +57,27 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    .banner {
+      position: fixed;
+      top: 0;
+      background-color: $white;
+      border: 1px solid $white;
+      border-radius: 0.25rem;
+      animation: showBanner 1s ease forwards, hideBanner 1s ease 6s forwards;
+      font-size: $f-normal;
+      color: $black;
+      height: auto;
+      width: auto;
+      font-weight: 500;
+      cursor: unset;
+      padding: 0.5rem 1rem;
+
+      a {
+        padding-left: 0.5rem;
+        color: $black;
+      }
+    }
+
     div {
       background-color: $white;
       padding: 0.25rem 1rem;
@@ -81,5 +102,25 @@
     .contacts {
       justify-content: space-around;
     }
+  }
+}
+
+@keyframes showBanner {
+  0% {
+    top: -5rem;
+  }
+
+  100% {
+    top: 1rem;
+  }
+}
+
+@keyframes hideBanner {
+  0% {
+    top: 1rem;
+  }
+
+  100% {
+    top: -5rem;
   }
 }
