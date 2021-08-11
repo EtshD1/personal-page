@@ -1,11 +1,29 @@
+import { useState } from "react";
 import images from "../images";
+
+const Project = ({ img, design, code, preview }: { img: string, design?: string, code?: string, preview?: string }) => {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(ps => !ps);
+  }
+
+  return (<div onClick={handleClick}>
+    <img src={img} alt="" />
+    <div className={active ? 'activeLink' : ''}>
+      {design ? <a target="_blank" rel="noreferrer" href={design}>Design</a> : null}
+      {code ? <a target="_blank" rel="noreferrer" href={code}>Code</a> : null}
+      {preview ? <a target="_blank" rel="noreferrer" href={preview}>Live Preview</a> : null}
+    </div>
+  </div>);
+}
 
 const Showcase = () => {
   return (<div className="showcase">
-    <div><img src={images.Site.Site1} alt="" /></div>
-    <div><img src={images.Site.Site2} alt="" /></div>
-    <div><img src={images.Site.Site3} alt="" /></div>
-    <a className="github-link" href="https://github.com/EtshD1">
+    <Project design="dsadsa" preview="dsa" img={images.Site.Site1} />
+    <Project img={images.Site.Site2} />
+    <Project img={images.Site.Site3} />
+    <a className="github-link" target="_blank" rel="noreferrer" href="https://github.com/EtshD1">
       <div>View more</div>
       <div>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

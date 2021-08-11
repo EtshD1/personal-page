@@ -30,15 +30,63 @@
 		flex-wrap: wrap;
 		width: 100%;
 
+		a {
+			height: 8.5rem;
+		}
+
 		> div,
 		a {
 			width: 8.5rem;
-			height: 8.5rem;
 			border-radius: 100%;
-			margin-bottom: 2rem;
+			margin-bottom: 4rem;
+			cursor: pointer;
 
 			img {
 				width: 100%;
+			}
+		}
+
+		> div {
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+
+			> div {
+				background-color: $white;
+				color: $black;
+				width: 100%;
+				margin-top: 1rem;
+				font-size: $f-normal;
+				text-align: center;
+				font-weight: 500;
+				border-radius: 0.2rem;
+				overflow: hidden;
+				transition: border 1s ease-out, opacity 0.3s ease;
+				opacity: 0;
+
+				a {
+					transition: all 0.5s ease-out;
+					padding: 0rem 0.25rem;
+					height: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 0;
+					margin: 0;
+				}
+			}
+
+			.activeLink {
+				opacity: 1;
+				border: 2px solid $black;
+				a {
+					height: 2rem;
+				}
+
+				a:not(:last-child) {
+					border-bottom: 1px solid $gray;
+				}
 			}
 		}
 
