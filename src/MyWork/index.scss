@@ -50,38 +50,48 @@
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
+			flex-direction: column;
 			flex-wrap: wrap;
 
-			> div {
+			.project {
 				background-color: $white;
 				color: $black;
-				width: 100%;
-				margin-top: 1rem;
+				width: auto;
 				font-size: $f-normal;
 				text-align: center;
 				font-weight: 500;
 				border-radius: 0.2rem;
 				overflow: hidden;
-				transition: border 1s ease-out, opacity 0.3s ease;
+				border-width: 0;
+				transition: border 0.2s ease-out, opacity 0.2s ease;
 				opacity: 0;
+				z-index: 1;
+				display: flex;
 
 				a {
-					transition: all 0.5s ease-out;
-					padding: 0rem 0.25rem;
+					transition: all 0.3s ease-out;
+					padding: 0rem 0.5rem;
 					height: 0;
+					width: auto;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					border-radius: 0;
 					margin: 0;
+					svg {
+						height: $f-xlarge;
+						width: $f-xlarge;
+						fill: $primary;
+						stroke: $primary;
+					}
 				}
 			}
 
-			.activeLink {
+			.active {
 				opacity: 1;
 				border: 2px solid $black;
 				a {
-					height: 2rem;
+					height: 3rem;
 				}
 
 				a:not(:last-child) {
@@ -286,6 +296,10 @@
 		}
 
 		.showcase {
+			> div {
+				flex-direction: row;
+			}
+
 			.github-link {
 				width: 100%;
 				height: auto;
