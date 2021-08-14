@@ -37,6 +37,7 @@
 		> div,
 		a {
 			width: 8.5rem;
+			height: 8.5rem;
 			border-radius: 100%;
 			margin-bottom: 4rem;
 			cursor: pointer;
@@ -50,13 +51,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
-			flex-direction: column;
 			flex-wrap: wrap;
 
 			.project {
 				background-color: $white;
 				color: $black;
-				width: auto;
 				font-size: $f-normal;
 				text-align: center;
 				font-weight: 500;
@@ -67,6 +66,8 @@
 				opacity: 0;
 				z-index: 1;
 				display: flex;
+				position: relative;
+				top: -70%;
 
 				a {
 					transition: all 0.3s ease-out;
@@ -79,8 +80,8 @@
 					border-radius: 0;
 					margin: 0;
 					svg {
-						height: $f-xlarge;
-						width: $f-xlarge;
+						height: $f-large;
+						width: $f-large;
 						fill: $primary;
 						stroke: $primary;
 					}
@@ -91,7 +92,7 @@
 				margin-top: 0.5rem;
 				opacity: 1;
 				a {
-					height: 3rem;
+					height: $f-xlarge;
 				}
 			}
 		}
@@ -294,6 +295,21 @@
 		.showcase {
 			> div {
 				flex-direction: row;
+
+				.project {
+					top: -60%;
+
+					a svg {
+						height: $f-large;
+						width: $f-large;
+					}
+
+					&.active {
+						a {
+							height: $f-xlarge;
+						}
+					}
+				}
 			}
 
 			.github-link {
@@ -320,12 +336,14 @@
 
 					svg path {
 						fill: $white;
+						height: $f-xlarge;
 					}
 				}
 			}
 
 			> div {
 				width: 12rem;
+				height: 12rem;
 			}
 		}
 
