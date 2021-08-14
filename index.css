@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Inter;
+  src: url(./fonts//Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts//Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-LightItalic-BETA.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url(./fonts/Lobster-Regular.ttf);
+}
+
+#root {
+  font-family: Inter;
+}
