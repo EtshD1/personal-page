@@ -41,9 +41,28 @@
 			border-radius: 100%;
 			margin-bottom: 4rem;
 			cursor: pointer;
+			transition: box-shadow 0.5s ease;
 
 			img {
 				width: 100%;
+				transition: filter 0.5s ease;
+			}
+		}
+
+		.active {
+			border-radius: 100%;
+			box-shadow: $gray 0px 0px 5px 10px;
+
+			img {
+				filter: blur(2px);
+			}
+
+			.project {
+				margin-top: 0.5rem;
+				opacity: 1;
+				a {
+					height: $f-xlarge;
+				}
 			}
 		}
 
@@ -85,14 +104,6 @@
 						fill: $primary;
 						stroke: $primary;
 					}
-				}
-			}
-
-			.active {
-				margin-top: 0.5rem;
-				opacity: 1;
-				a {
-					height: $f-xlarge;
 				}
 			}
 		}
@@ -293,6 +304,14 @@
 		}
 
 		.showcase {
+			.active {
+				.project {
+					a {
+						height: $f-xlarge;
+					}
+				}
+			}
+
 			> div {
 				flex-direction: row;
 
@@ -302,12 +321,6 @@
 					a svg {
 						height: $f-large;
 						width: $f-large;
-					}
-
-					&.active {
-						a {
-							height: $f-xlarge;
-						}
 					}
 				}
 			}
