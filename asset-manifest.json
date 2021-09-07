@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/personal-page/static/css/main.107bb3ca.chunk.css",
-    "main.js": "/personal-page/static/js/main.c7cb7a45.chunk.js",
-    "main.js.map": "/personal-page/static/js/main.c7cb7a45.chunk.js.map",
+    "main.css": "/personal-page/static/css/main.0e5724f6.chunk.css",
+    "main.js": "/personal-page/static/js/main.61a265b8.chunk.js",
+    "main.js.map": "/personal-page/static/js/main.61a265b8.chunk.js.map",
     "runtime-main.js": "/personal-page/static/js/runtime-main.9e2aa951.js",
     "runtime-main.js.map": "/personal-page/static/js/runtime-main.9e2aa951.js.map",
     "static/js/2.89cb008c.chunk.js": "/personal-page/static/js/2.89cb008c.chunk.js",
     "static/js/2.89cb008c.chunk.js.map": "/personal-page/static/js/2.89cb008c.chunk.js.map",
     "index.html": "/personal-page/index.html",
-    "static/css/main.107bb3ca.chunk.css.map": "/personal-page/static/css/main.107bb3ca.chunk.css.map",
+    "static/css/main.0e5724f6.chunk.css.map": "/personal-page/static/css/main.0e5724f6.chunk.css.map",
     "static/js/2.89cb008c.chunk.js.LICENSE.txt": "/personal-page/static/js/2.89cb008c.chunk.js.LICENSE.txt",
-    "static/media/AdobeXD.018b2d89.svg": "/personal-page/static/media/AdobeXD.018b2d89.svg",
+    "static/media/AdobeXD.a42d3bbf.svg": "/personal-page/static/media/AdobeXD.a42d3bbf.svg",
     "static/media/AdvancedWebDevelopment.21bf9f89.png": "/personal-page/static/media/AdvancedWebDevelopment.21bf9f89.png",
-    "static/media/Angular.8e14e3e5.svg": "/personal-page/static/media/Angular.8e14e3e5.svg",
+    "static/media/Angular.1df26912.svg": "/personal-page/static/media/Angular.1df26912.svg",
     "static/media/Certificate.37bcf08b.svg": "/personal-page/static/media/Certificate.37bcf08b.svg",
     "static/media/Email.a09ed30d.svg": "/personal-page/static/media/Email.a09ed30d.svg",
     "static/media/Figma.0f4098dc.svg": "/personal-page/static/media/Figma.0f4098dc.svg",
@@ -21,7 +21,7 @@
     "static/media/Git-SourceControl.45b63f48.png": "/personal-page/static/media/Git-SourceControl.45b63f48.png",
     "static/media/Intro-to-CloudComputing.edf60553.png": "/personal-page/static/media/Intro-to-CloudComputing.edf60553.png",
     "static/media/ProfessionalWebDevelopment.9d0c1682.png": "/personal-page/static/media/ProfessionalWebDevelopment.9d0c1682.png",
-    "static/media/Python.5a7d606e.svg": "/personal-page/static/media/Python.5a7d606e.svg",
+    "static/media/Python.d3ca50d8.svg": "/personal-page/static/media/Python.d3ca50d8.svg",
     "static/media/React.86cc6086.svg": "/personal-page/static/media/React.86cc6086.svg",
     "static/media/ResponsiveWebDesign.64742f7a.png": "/personal-page/static/media/ResponsiveWebDesign.64742f7a.png",
     "static/media/Site1.a678aaca.png": "/personal-page/static/media/Site1.a678aaca.png",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.9e2aa951.js",
     "static/js/2.89cb008c.chunk.js",
-    "static/css/main.107bb3ca.chunk.css",
-    "static/js/main.c7cb7a45.chunk.js"
+    "static/css/main.0e5724f6.chunk.css",
+    "static/js/main.61a265b8.chunk.js"
   ]
 }
